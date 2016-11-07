@@ -1,2 +1,3 @@
+SOURCES=main.cpp gl_utils.cpp maths_funcs.cpp tools.cpp
 all:
-	g++ -o game main.c -I include -lGL -lGLEW -lglfw
+	g++ ${SOURCES} -lGL -lGLEW -lglfw -o prog -lm
